@@ -1,0 +1,46 @@
+@import '../../App.scss';
+
+.button {
+    width: 19.375rem;
+    height: 4.375rem;
+    border-radius: 4.375rem;
+    font-size: clamp(0.9375rem, calc(1.1875rem + (2vw - 2.1rem)), 1.1875rem); 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.125rem $blue; 
+    padding: 0.6875rem 0; 
+    background-color: $blue;
+    margin: auto;
+    color: $white;
+    cursor: pointer;
+  
+    .span {
+        width: 15.25rem;
+        line-height: 1.5rem; 
+    }
+    .icon {
+        width: 1.375rem;
+        height: 1.375rem; 
+        margin-right: 1rem;
+        margin-left: 0.5rem;
+        margin-top: 0.25rem;
+    }
+
+    .iconButton {
+        width: 14.125rem;
+        text-align: left;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        background-color: $grey;
+        border-color: $grey;
+    }
+}

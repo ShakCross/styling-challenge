@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$blue: #2D3E4E;
+$green: #07C06A;
+$white: #FFFFFF;
+$grey: #AAAAAA;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: darkgrey;
+  color: $white;
+  font-weight: 400;
+}
